@@ -1,0 +1,118 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar{
+    width: 100%;
+    background-color: rgb(45, 45, 45);
+    height: 40px;
+    display: flex;
+    align-items: center;
+
+
+}
+
+
+.navbar a{
+    margin-top: 0 auto;
+    margin-left: 20px;
+    border: solid black 1px;
+    border-radius: 3em;
+    padding: 8px;
+    text-decoration: none;
+    color: white;
+}
+.navbar a:hover{
+    background-color: grey;
+}
+
+@keyframes navbarmove {
+    from {
+        filter: blur(8px);
+    }
+    to {
+        filter: blur(0px);
+    }
+}
+.banner{
+    height: 850px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    background-image: url("images/index images/20231119_160311.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/*below are the titles*/
+#titlecontainer{
+    border: solid rgb(255, 255, 255) 1px;
+    border-radius: 3em;
+    padding: 20px;
+    position: relative;
+    top: 300px;
+    width: 30%;
+    margin-left: 20%;
+    animation: mymove 2s; /*https://www.w3schools.com/cssref/css3_pr_animation-keyframes.php*/
+}
+
+@keyframes mymove {
+    from {
+        top: 200px;
+        filter: blur(8px);
+    }
+    to {
+        top: 300px;
+        filter: blur(0px);
+    }
+  }
+  
+
+.banner #titlecontainer h1{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+
+.banner a{
+    position: relative;
+    top: 300px;
+    margin-left: 21.5%;
+    font-size: 30px;        
+    text-decoration: none;
+    animation: mymove 2s; /*https://www.w3schools.com/cssref/css3_pr_animation-keyframes.php*/
+    color: white;
+}
+
+.about{
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    height: 1000px;
+}
+
+.about h2{
+    font-size: 60px;
+    margin: 0;
+    padding: 0;
+}
+
+.about #Paragraph-1{
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 40px;
+}
+
+.gamespace{
+    padding-top: 10px;
+}
+
+
+
+

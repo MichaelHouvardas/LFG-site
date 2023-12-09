@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text chat</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        #inputcontainer{
+            position: fixed;
+            bottom: 10px; /* Adjust the distance from the bottom as needed */
+            right: 10px; /* Adjust the distance from the right as needed */
+            display: flex;
+            border-radius: 2em;
+            background-color: rgb(100, 100, 100);
+            padding: 10px; /* Add padding for better aesthetics */
+            color: white; /* Add text color for better visibility */
+            text-decoration: none; /* Remove default underline for links */
+        }
+        .userchat{
+            display: block;
+            background-color: blue;
+            color: white;
+            float: right; /* Align user chats to the right */
+            margin-left: 60%;
+        }
+        .Chat-window{
+            margin: auto;
+            width: 60%; /* Set a width for centering, adjust as needed */
+        }
+
+        li{
+            border-radius: 2em;
+            background-color: rgb(100, 100, 100);
+            padding: 10px; /* Add padding for better aesthetics */
+            width: fit-content;
+            margin-bottom: 8px;
+        }
+
+        body{
+            background-color: rgb(196, 196, 196);
+        }
+
+        h1{
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="../index.html">Home</a>
+        <a href="../Games.html">Games</a>
+    </div>
+    <div class="Chat-window">
+        <h1>Chat window</h1>
+        <ul id="list">
+            <li>[Sam] Hello</li>
+            <li>[Emmie] Hey im looing for a group can I join</li>
+            <li>[Emma] Hey invite me to the world</li>
+
+            <!--Chats appear here!-->
+        </ul>
+    </div>
+    <div id="inputcontainer">
+        <input type="text" id="chatMSG">
+        <button id="submitChat">Send chat</button>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

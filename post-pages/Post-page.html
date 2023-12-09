@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a post</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .banner-minecraft-post {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 95vh;
+            margin: 0;
+            background-image: url("../images/Games-images/Minecraft_Horizontal-Key-Art-960x640.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            animation: blurmove 2s; /*https://www.w3schools.com/cssref/css3_pr_animation-keyframes.php*/
+
+        }
+        @keyframes blurmove {
+            from {
+                filter: blur(8px);
+            }
+            to {
+                filter: blur(0px);
+            }
+        }
+        .banner-minecraft-post p{
+            color: white;
+            border-radius: 2em;
+            background-color: rgb(100, 100, 100);
+            padding: 10px; /* Add padding for better aesthetics */
+        }
+
+        #message{
+            width: 50%;
+        }
+        #time{
+            width: 35px;
+        }
+        
+    </style>
+</head>
+<body>
+     <div class="navbar">
+        <a href="../index.html">Home</a>
+        <a href="../Games.html">Games</a>
+    </div>
+<div class="banner-minecraft-post">
+    <p>The message you want to send goes here</p>
+    <input type="text" id="message">
+    <p>When do you want to play?</p>
+    <input type="text" id="time">
+    <p>How many players do you need?</p>
+    <input type="text" id="time">
+    <button>post</button>
+</div>
+   
+
+</body>
+</html>
